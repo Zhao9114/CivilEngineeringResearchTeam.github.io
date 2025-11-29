@@ -1,0 +1,137 @@
+/* ------------------------------
+   GLOBAL RESET
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ------------------------------
+     BASE TYPOGRAPHY & LAYOUT
+  --------------------------------*/
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #222;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* ------------------------------
+     HEADER & NAVIGATION
+  --------------------------------*/
+  .site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-inner {
+    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .site-brand a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #222;
+  }
+  
+  .site-brand .tagline {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 2px;
+  }
+  
+  .site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .site-nav a {
+    text-decoration: none;
+    color: #222;
+    padding: 0.35rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .site-nav a:hover {
+    background-color: #eaeaea;
+  }
+  
+  /* ------------------------------
+     MAIN CONTENT
+  --------------------------------*/
+  .site-main {
+    padding: 2rem 0;
+  }
+  
+  .site-main h1 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+  
+  .site-main section {
+    margin-bottom: 2rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* ------------------------------
+     CARDS (Used later in People, Projects)
+  --------------------------------*/
+  .person-card,
+  .project-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .simple-list,
+  .pub-list {
+    margin-left: 1.2rem;
+  }
+  
+  /* ------------------------------
+     FOOTER
+  --------------------------------*/
+  .site-footer {
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* ------------------------------
+     RESPONSIVE DESIGN
+  --------------------------------*/
+  @media (max-width: 600px) {
+    .header-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .site-nav ul {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  }
+  
